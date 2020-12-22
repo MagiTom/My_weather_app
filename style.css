@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.background-image {
+    position: absolute;
+    background-image: url('https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    filter: blur(8px);
+}
+
+.app {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px;
+    height: 75%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.navigation__hidden {
+    display: none;
+}
+
+.navigation__active {
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    width: 30%;
+    height: 100%;
+    animation: show .5s linear;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navigation__close {
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.navigation__close:hover {
+    color: peru;
+}
+
+.navigation__search {
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.navigation__search::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-bottom: 0.5px solid white;
+    opacity: 0.5;
+}
+
+.btnSearch {
+    position: absolute;
+    background-color: peru;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    font-size: 2rem;
+    right: 0;
+    top: 0;
+    transition: all .3s;
+}
+
+.btnSearch:hover {
+    background-color: rgb(139, 91, 43);
+}
+
+.navigation__search p {
+    margin: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.navigation__cities {
+    margin: 20px;
+    padding: 10px;
+}
+
+.navigation__cities>* {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.navigation__cities>*:hover {
+    color: peru;
+}
+
+.app__main {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.app__temperature_box {
+    display: flex;
+    margin-right: 20px;
+}
+
+.app__temperature {
+    font-size: 4rem;
+}
+
+.app__date_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__date {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.app__weather {
+    font-size: 4rem;
+    margin-left: 20px;
+}
+
+.app__city {
+    font-weight: bold;
+}
+
+.app__days {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.app__days>* {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    height: 70%;
+}
+
+.app__days>*>* {
+    margin: 0 10px 10px 0;
+}
+
+.app__days i {
+    font-size: 2rem;
+}

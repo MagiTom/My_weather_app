@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="app">
+            <button class="btnSearch"><i class="fas fa-search"></i></button>
+            <nav class="navigation__hidden">
+                <button class="navigation__close">X</button>
+                <div class="navigation__search">
+                    <p>Choose a city</p>
+                </div>
+                <div class="navigation__cities">
+                    <div class="navigation__city1">Katowice</div>
+                    <div class="navigation__city2">Kraków</div>
+                    <div class="navigation__city3">Warszawa</div>
+                    <div class="navigation__city4">Wrocław</div>
+                    <div class="navigation__city5">Gdańsk</div>
+                    <div class="navigation__city6">Lublin</div>
+                </div>
+            </nav>
+
+            <div class="app__main">
+                <div class="app__temperature_box">
+                    <h1 class="app__temperature"></h1>
+                    <p>&#x2103</p>
+                </div>
+                <div class="app__date_box">
+                    <div class="app__city"></div>
+                    <div class="app__date"></div>
+                </div>
+                <div class="app__weather"><i class="fas"></i></div>
+            </div>
+
+            <div class="app__days">
+                <div class="tommorrow1">
+                    <div class="tommorrow1__day">11</div>
+                    <div class="tommorrow1__weather"><i class="fas"></i></div>
+                    <div class="app__temperature_box">
+                        <h1 class="tommorrow1__temperature">23st</h1>
+                        <p>&#x2103</p>
+                    </div>
+                </div>
+                <div class="tommorrow2">
+                    <div class="tommorrow2__day">12</div>
+                    <div class="tommorrow2__weather"><i class="fas"></i></div>
+                    <div class="app__temperature_box">
+                        <h1 class="tommorrow2__temperature">23st</h1>
+                        <p>&#x2103</p>
+                    </div>
+                </div>
+                <div class="tommorrow3">
+                    <div class="tommorrow3__day">13</div>
+                    <div class="tommorrow3__weather"><i class="fas"></i></div>
+                    <div class="app__temperature_box">
+                        <h1 class="tommorrow3__temperature">12st</h1>
+                        <p>&#x2103</p>
+                    </div>
+                </div>
+                <div class="tommorrow4">
+                    <div class="tommorrow4__day">14</div>
+                    <div class="tommorrow4__weather"><i class="fas"></i></div>
+                    <div class="app__temperature_box">
+                        <h1 class="tommorrow4__temperature">12st</h1>
+                        <p>&#x2103</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e1b72a7d93.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
